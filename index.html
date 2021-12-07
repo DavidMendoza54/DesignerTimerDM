@@ -1,0 +1,40 @@
+<!-- Author:  David Mendoza
+
+        Credits: https://www.w3schools.com/js/ ,https://www.w3schools.com/css/default.asp , https://www.w3schools.com/html/default.asp
+        Grid  Areas: https://www.youtube.com/watch?v=tPosqmwIx0w "The Net Ninja"
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Stalinist One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Joti One' rel='stylesheet'>
+    <title>Designer Timer</title>
+</head>
+<body>
+    <h1>Designer Timer</h1>
+    <div id="Rectangle">
+        <p id="HoursID" class="Headings">Hours</p>
+        <p id="MinutesID" class="Headings">Minutes</p>
+        <p id="SecondsID" class="Headings">Seconds</p>
+
+        <input id="HoursInput" type="number" max="99" min="0" value="0" class="timerNumbers">
+
+        <p id="Semicolons1" class="semicolon">:</p>
+
+        <input id="MinutesInput" type="number" max="60" min="0" value="0" class="timerNumbers">
+
+        <p id="Semicolons2" class="semicolon">:</p>
+
+        <input id="SecondsInput" type="number" max="60" min="0" value="0" class="timerNumbers">
+
+        <button id="start" class="Button">Start</button>
+
+        <button id="reset" class="Button">Reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

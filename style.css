@@ -1,0 +1,106 @@
+html {
+    background-image: url(Wallpaper.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'Stalinist One';font-size: 50px;
+    text-align: center;
+}
+
+#Rectangle {
+    height: 200px;
+    width: 700px;
+    background-color: #f5e4c38e;
+    margin: 0 auto;
+    border: 5px solid #eb2a2ab2;
+    border-radius: 10px;
+    border-style: ridge;
+/* each collumn is same width (1fr) first collumn is how many rows.*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*Hours, Minutes, Seconds*/
+.Headings {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#HoursID {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+#MinutesID {
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+#SecondsID {
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+/*times 0 : 0 : 0*/
+.timerNumbers {
+    justify-self: center;
+    align-self: center;
+
+    border: none;
+    background-color: #05000000;
+    font-size: 50px;
+    width: 70px;
+    height: 50px;
+}
+
+#HoursInput {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.semicolon {
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+    margin: 0;
+}
+/*row / collumn / row / collumn  */
+#Semicolons1 {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+#MinutesInput {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+#Semicolons2 {
+    grid-area: 2 / 3 / 2 / 5;
+}
+
+#SecondsInput {
+    grid-area: 2 / 4 / 2 / 5;
+}
+
+/* Start and Reset buttons*/
+
+.Button {
+    align-self: center;
+    
+    width: 100px;
+    height: 40px;
+
+    font-size: 30px;
+    justify-self: center;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 4;
+    color: green;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 5;
+    color: red;
+}
